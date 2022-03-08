@@ -7,7 +7,73 @@
     <title>Tailwind Project</title>
     <link rel="stylesheet" href="./output/tailwind.css" />
   </head>
-  <body>
-    <div class="text-center font-semibold bg-green-500 text-red-400">Hello</div>
+  <body class="bg-gray-100 dark:bg-gray-700">
+    <header>
+      <h2
+        class="text-6xl font-bold text-blue-900 dark:text-white text-center my-12"
+      >
+        Welcome to the
+        <span class="dark:text-green-400 text-yellow-500">Baaper Bank</span>
+      </h2>
+    </header>
+    <main>
+      <!-- Baaper bank start here -->
+      <section class="grid md:grid-cols-3 gap-3 sm:grid-cols-1">
+        <div
+          class="duration-500 backdrop-blur bg-blue-400 shadow-lg text-center lg:h-64 p-2 m-6 rounded-lg"
+        >
+          <h4 class="text-2xl font-bold text-white">Withdraw</h4>
+          <h1 id="withdraw-money" class="text-2xl font-bold text-white">
+            $ 0.00
+          </h1>
+          <div class="mt-12">
+            <input
+              id="withdraw-field"
+              type="text"
+              class="border-0 mr-2 p-2 rounded-md focus:outline-none"
+            />
+            <button
+              id="withdraw-button"
+              class="backdrop-brightness-200 p-2 text-white text-center font-medium hover:bg-blue-900 hover:translate-x-1 transform duration-300 focus:outline-none rounded-lg shadow"
+            >
+              Withdraw
+            </button>
+          </div>
+        </div>
+        <div
+          class="duration-500 bg-red-400 text-center shadow-lg p-2 m-6 rounded-lg"
+        >
+          <h2 class="text-2xl font-bold text-white">Deposit</h2>
+          <h1 class="text-2xl font-bold text-white" id="deposit-money">
+            $ 0.00
+          </h1>
+          <div class="mt-12"></div>
+          <input
+            id="deposit-field"
+            type="text"
+            class="border-0 focus:outline-none mr-2 p-2 rounded-md"
+          />
+          <button
+            id="deposit-button"
+            class="backdrop-brightness-200 p-2 hover:text-white text-center font-medium hover:bg-indigo-700 hover:translate-x-2 transform duration-300 focus:ring-opacity-5 rounded-lg shadow"
+          >
+            Deposit
+          </button>
+        </div>
+        <div
+          class="shadow-lg bg-green-400 text-center p-2 m-6 duration-500 rounded-lg"
+        >
+          <h2 class="text-2xl font-bold text-white">Total Balance</h2>
+          <h1 id="total-balance" class="text-8xl font-bold text-white mt-12">
+            $ 0.00
+          </h1>
+        </div>
+      </section>
+      <!-- Baaper bank start here -->
+    </main>
+
+    <!-- javascript src -->
+    <script src="./js/index.js"></script>
+    <!-- javascript src -->
   </body>
 </html>
